@@ -6,3 +6,5 @@ RUN git clone https://github.com/haotian-liu/LLaVA.git
 COPY pyproject.toml /LLaVA/
  
 RUN cd /LLaVA && pip install -e .
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
